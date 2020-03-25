@@ -8,4 +8,4 @@ We need to decide on the following:
 3. Indivudal page layouts with images 
 4. Resizing images to make sure they fit inside our pages. 
 5. Make sure CSS fits the needs of what we are trying to achieve 
->>>>>>> master
+
