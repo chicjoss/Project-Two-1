@@ -22,7 +22,7 @@
     </div>
 <h2>About us </h2>
 <button type="button">History</button>
-<div class="information">
+<div class="content">
     <p>The International Society for Universal Dialogue was founded in Warsaw, Poland in 1989.ISUD is a philosophical
          society dedicated to promoting international and intercultural dialogue among an ever-wider
          segment of humanity.</p>
@@ -40,7 +40,7 @@
 
 </div>
 <button type="button">Constitution</button>
-<div class="information">
+<div class="content">
     <p>We the Members of the International Society for 
         Universal Dialogue, in order to investigate and articulate 
         the basic principles of universality systematically, rationally, 
@@ -172,5 +172,20 @@
                   <p>Vist the ISUD companion 
                       Journal Dialogue and Universalism @ www.dialogueanduniversalism.eu</p>
             </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </html>
